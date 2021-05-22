@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 
 from flask import Flask, jsonify
-from datetime import datetime as dt
+import datetime as dt
 
 #create engine
 engine = create_engine("sqlite:///hawaii.sqlite")
@@ -38,8 +38,8 @@ def welcome():
         f"/api/v1.0/stations<br/>"
         f"/api/v1.0/stations2<br/>"
         f"/api/v1.0/tobs<br/>"
-        f"/api/v1.0/<start><br/>"
-        f"/api/v1.0/<start>/<end>"
+        f"/api/v1.0/start<br/>"
+        f"/api/v1.0/start/end"
     )
 @app.route("/api/v1.0/precipitation")
 def precipitation():
@@ -102,10 +102,13 @@ def tobs():
     all_tobs=list(np.ravel(temp))
     dictionary=dict(zip(all_dates,all_tobs))
     return jsonify(dictionary)
-@app.route("/api/v1.0/<start>")
-def start(start):
-    if "2010-01-01"<=start<"2017-08-24":    
-    #Create our session (link) from Python to the DB
+@app.route("/api/v1.0/start")
+def start():
+    #input start date
+    start=input("Please input start date of year-month-date as xxxx-xx-xx:")
+    if "2010-01-01"<=start<"2017-08-24":
+        #Create our session (link) from Python to the DB
+    
     
         session=Session(engine)
         #query minimal temperature
@@ -123,9 +126,13 @@ def start(start):
     
         return jsonify(keys)
     else:
-        return "Date input error. Please input another date of year-month-date as xxxx-xx-xx between 2010-01-01 and 2017-08-24 as year-mo-da."
-@app.route("/api/v1.0/<start>/<end>")
-def start_end(start,end):
+        return "Date input error. Please input another date between 2010-01-01 and 2017-08-24."
+@app.route("/api/v1.0/start/end")
+def start_end():
+    #input start date
+    start=input("Please input start date of year-month-day as xxxx-xx-xx:")
+    #input end date
+    end=input("Please input end date of year-month-date as xxxx-xx-xx:")
     if end>start and end<="2017-08-24" and start>="2010-01-01":
         # Create our session (link) from Python to the DB
         session=Session(engine)
@@ -143,7 +150,7 @@ def start_end(start,end):
     
         return jsonify(keys)
     if end<=start or end>"2017-08-24" or start<"2010-01-01":
-        return "Date input error. Please input start date and end date of year-month-date as xxxx-xx-xx between 2010-01-01 and 2017-08-24.And make sure end date is after start date."
+        return "Date input error. Please input start date and end date between 2010-01-01 and 2017-08-24.And make sure end date is after start date."
 
 if __name__ == '__main__':
     app.run(debug=True)
