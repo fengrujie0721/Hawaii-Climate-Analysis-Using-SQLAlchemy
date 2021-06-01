@@ -103,3 +103,8 @@ There is significant difference between June temperature and December temperatur
 Unpaired t-test is used because the two groups are independent. The number of two groups is different. One is 1700 and the other is 1517.
 
 
+Plot the min, avg, and max temperature from your previous query as a bar chart.
+
+
+![image](https://user-images.githubusercontent.com/79819331/120376212-9b15d580-c2e9-11eb-83f7-c567fd79014c.png)
+
