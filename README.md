@@ -84,3 +84,22 @@ Query the dates and temperature observations of the most active station for the 
 When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates between the start and end date inclusive. Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
 
 ![image](https://user-images.githubusercontent.com/79819331/120373730-b3382580-c2e6-11eb-8406-847769c87635.png)
+
+
+Use pandas to identify the average temperature in June at all stations across all available years in the dataset. Do the same for December temperature. Use the t-test to determine whether the difference in the means, if any, is statistically significant. A paired t-test or an unpaired t-test should be used? Why?
+
+![image](https://user-images.githubusercontent.com/79819331/120375015-458cf900-c2e8-11eb-9674-3a06de2ba103.png)
+
+Get June data.
+
+![image](https://user-images.githubusercontent.com/79819331/120375205-8422b380-c2e8-11eb-9ffa-e3f1eff4858e.png)
+
+
+Get December data.
+
+![image](https://user-images.githubusercontent.com/79819331/120375425-ca781280-c2e8-11eb-8603-38cda3fca83a.png)
+
+There is significant difference between June temperature and December temperature.
+Unpaired t-test is used because the two groups are independent. The number of two groups is different. One is 1700 and the other is 1517.
+
+
