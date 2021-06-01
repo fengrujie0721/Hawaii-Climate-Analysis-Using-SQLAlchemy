@@ -108,3 +108,12 @@ Plot the min, avg, and max temperature from your previous query as a bar chart.
 
 ![image](https://user-images.githubusercontent.com/79819331/120376212-9b15d580-c2e9-11eb-83f7-c567fd79014c.png)
 
+
+Use Pandas to plot an area plot for the daily temperature normals.
+
+![image](https://user-images.githubusercontent.com/79819331/120376987-86860d00-c2ea-11eb-90e0-6a2cdac28307.png)
+
+
+
+
+
