@@ -34,7 +34,7 @@ session=Session(engine)
 Exploratory Precipitation Analysis
 
 
-![image](https://user-images.githubusercontent.com/79819331/120371820-589dca00-c2e4-11eb-9ffa-fb7fb154697c.png)
+![image](https://user-images.githubusercontent.com/79819331/120374430-89cbc980-c2e7-11eb-9c4b-9c580b137976.png)
 
 
 Precipitation of Hawaii
