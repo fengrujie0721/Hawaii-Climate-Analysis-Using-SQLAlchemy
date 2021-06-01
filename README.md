@@ -64,3 +64,7 @@ Convert the query results to a dictionary using `date` as the key and `prcp` as 
 
 ![image](https://user-images.githubusercontent.com/79819331/120373394-4de43480-c2e6-11eb-9d55-00a4f673ee07.png)
 
+
+When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates between the start and end date inclusive. Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
+
+![image](https://user-images.githubusercontent.com/79819331/120373730-b3382580-c2e6-11eb-8406-847769c87635.png)
