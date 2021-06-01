@@ -115,7 +115,7 @@ Use Pandas to plot an area plot for the daily temperature normals.
 
 ![image](https://user-images.githubusercontent.com/79819331/120376987-86860d00-c2ea-11eb-90e0-6a2cdac28307.png)
 
-
+Daily minimal, average, and maximal temperature of Hawaii during the period between 2017-08-01 and 2017-08-07.
 
 
 
