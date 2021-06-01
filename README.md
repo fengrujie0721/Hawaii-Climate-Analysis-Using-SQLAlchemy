@@ -65,6 +65,19 @@ Convert the query results to a dictionary using `date` as the key and `prcp` as 
 ![image](https://user-images.githubusercontent.com/79819331/120373394-4de43480-c2e6-11eb-9d55-00a4f673ee07.png)
 
 
+Return a JSON list of stations from the dataset.
+
+![image](https://user-images.githubusercontent.com/79819331/120374033-07dba080-c2e7-11eb-80e9-517bc64d1081.png)
+
+
+Query the dates and temperature observations of the most active station for the last year of data. Return a JSON list of temperature observations (TOBS) for the previous year.
+
+![image](https://user-images.githubusercontent.com/79819331/120374248-525d1d00-c2e7-11eb-8a01-d9cdd3d1b162.png)
+
+
+
+
+
 When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates between the start and end date inclusive. Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
 
 ![image](https://user-images.githubusercontent.com/79819331/120373730-b3382580-c2e6-11eb-8406-847769c87635.png)
