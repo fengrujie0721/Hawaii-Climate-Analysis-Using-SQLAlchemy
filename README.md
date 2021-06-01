@@ -108,6 +108,8 @@ Plot the min, avg, and max temperature from your previous query as a bar chart.
 
 ![image](https://user-images.githubusercontent.com/79819331/120376212-9b15d580-c2e9-11eb-83f7-c567fd79014c.png)
 
+Average temperature of Hawaii from 2016-08-01 to 2017-08-01.
+
 
 Use Pandas to plot an area plot for the daily temperature normals.
 
