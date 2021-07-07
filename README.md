@@ -1,4 +1,4 @@
-# SQLAlchemy-Challenge
+# Hawaii Climate Analysis Using SQLAlchemy
  To help with trip planning, some climate analysis on the area of Hawaii needs to be done.
  
  Use SQLAlchemy create_engine to connect to your sqlite database.
